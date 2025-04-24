@@ -1,0 +1,505 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+       <!-- in your <head> -->
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CPA PROF Elizabeth Kalunda</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="./js/main.js">
+    <link rel="stylesheet" href="./pdfs/Manifesto.pdf">
+    <!-- Font Awesome for icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <!-- Side Navigation -->
+     <nav>
+    <div id="mySidebar" class="sidebar">
+        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">×</a>
+         <a href="#home">Home</a>
+          <a href="#About Me">About</a>
+           <a href="#mission-vision">Mission & Vision </a>
+          <a href="#manifesto">Manifesto</a>
+        <a href="#contact">Contact</a>
+      </div>
+    </nav>
+      <div id="main">
+        <button class="openbtn" onclick="openNav()">☰ </button>  
+
+
+        <script>
+           function openNav() {
+  const sidebar = document.getElementById("mySidebar");
+  const main    = document.getElementById("main");
+
+  sidebar.style.width = "250px";
+
+  // only push content on desktop/tablet
+  if (window.innerWidth > 768) {
+    main.style.marginLeft = "250px";
+  }
+}
+
+function closeNav() {
+  document.getElementById("mySidebar").style.width      = "0";
+  document.getElementById("main").style.marginLeft = "0";
+}
+// after your existing nav open/close logic…
+
+// grab the toggle
+const openBtn = document.querySelector('.openbtn');
+
+// on scroll, toggle a class
+window.addEventListener('scroll', () => {
+  if (window.scrollY > 20) {
+    openBtn.classList.add('scrolled');
+  } else {
+    openBtn.classList.remove('scrolled');
+  }
+});
+
+// js/main.js
+const phone   = "254712318707";
+const message = "Hello";
+const sendLink = document.getElementById("sendMessage");
+
+// build a web‑URL that works everywhere
+const url = `https://api.whatsapp.com/send?phone=${phone}&text=${encodeURIComponent(message)}`;
+
+sendLink.href = url;
+            </script>
+
+       <!-- Hero Section -->
+<section id="home" class="hero">
+    <div class="hero-content">
+        <div class="hero-text">
+            <h1>CPA PROF ELIZABETH KALUNDA</h1>
+            <p class="title">ICPAK VICE CHAIRMAN</p>
+            <p class="description">A qualified accountant with over 26 years of Experience in 
+                Finance and accounting from academia and Industry.
+            </p>
+        </div>
+        <div class="hero-image">
+            <img src="./images/profile.png" alt="Your Name">
+        </div>
+    </div>
+</section>
+<main>
+        <!-- About Section -->
+        <section id="About Me" class="About Me">
+            <div class="about-content">
+                <div class="about-image">
+                    <img src="./images/about.png" alt="About Me">
+                </div>
+                <div class="about-text">
+                    <h2>About Me</h2>
+                    <div class="text-content">
+                        <p class="intro">CPA Prof Elizabeth Kalunda is a council member
+                            and the Vice Chair of the Institute of Certified
+                            Public Accountants of Kenya (ICPAK). She is a
+                            qualified accountant with over 26 years of
+                            experience in Finance and accounting from
+                            academia and Industry. She is a passionate
+                            advocate for women in accounting and finance,
+                            and she is committed to promoting diversity and
+                            inclusion in the profession. She served as the
+                            Acting Deputy Vice Chancellor Finance and
+                            Administration United States International
+                            University Africa (USIU-A).</p>
+                        <p>CPA. Prof. Kalunda is a frequent speaker and writer on accounting and finance
+                            topics. She has been featured in a number of media outlets, including the Business
+                            Daily and the Business Monthly, East African Edition. She is a co author of a book
+                            titled. 'We Took The Risk'.
+                            </p>
+                        <p>CPA. Prof. Elizabeth Kalunda's academic journey reflects her dedication to the
+                            profession and knowledge. She earned a Doctorate in Business Administration with a
+                            specialization in Banking from the University of Nairobi, building upon her Master's in
+                            Business Administration (Accounting) from the same institution. A Certified Public
+                            Accountant (CPA-K) since 2003, she also holds a Bachelor of Education from Moi
+                            University. She is a Certified Public Accountant (CPA-K) and a Certified Public
+                            Mediator (CPM).
+                            She also lends her expertise as a representative of ICPAK to the boards of the Kenya
+                            Accountants and Secretaries National Examinations Board (Kasneb) where she is
+                            serving her second and final term.
+                            
+                            </p class>
+                            
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Mission & Vision Section -->
+<section id="mission-vision" class="mission-vision">
+    <div class="section-header">
+        <h2>Mission & Vision</h2>
+        <p class="section-subtitle">Guiding Principles for My Journey</p>
+    </div>
+    
+    <div class="cards-container">
+        <div class="card mission-card">
+            <div class="card-icon">
+                <i class="fas fa-bullseye"></i>
+            </div>
+            <h3>My Mission</h3>
+            <p>To serve the accounting profession with integrity, passion, and purpose—advancing ethical leadership, 
+                strengthening regulatory frameworks, and promoting lifelong learning. Prof. Kalunda is dedicated to 
+                enhancing member value, driving impactful policy reforms, nurturing the next generation of professionals, 
+                and fostering a united, inclusive, and future-ready accounting community.</p>
+            <div class="card-details">
+                
+            </div>
+        </div>
+
+        <div class="card vision-card">
+            <div class="card-icon">
+                <i class="fas fa-eye"></i>
+            </div>
+            <h3>My Vision</h3>
+            <p>To empower a dynamic and ethical accounting profession that drives national development, inspires global standards, 
+                and uplifts every member through inclusive leadership, innovation, and unwavering integrity.
+            </p>
+            <div class="card-details">
+                
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Manifesto Section -->
+<section id="manifesto" class="manifesto">
+    <div class="manifesto-header">
+        <h2>My Manifesto</h2>
+        <p class="manifesto-subtitle">My commitment to the membership under the tagline “Dedicated Service: 
+            Amplified Voice of ICPAK is anchored on the SLEEK 2.0 agenda which 
+            emphasizes on five core pillars derived from the Strategic Plan (2025-29). 
+            This agenda places ICPAK membership at the heart of every initiative, 
+            ensuring that we uplift the profession, empower accountants while 
+            upholding public trust in an environment where Integrity Counts.</p>
+        
+
+    <div class="manifesto-card">
+        <div class="manifesto-point">
+            <div class="manifesto-letter">S</div>
+            <div class="manifesto-content">
+                <h3>Setting the Bar in Standards for Superior Service</h3>
+                <p>Prof. Elizabeth Kalunda is committed to four strategic pillars: 1. 
+                    Standards Excellence, 2. Superiority in Practice, 3. Streamlined Membership 
+                    and Licensing, and 4. 360 Degrees Sustainability — all aimed at elevating 
+                    the accounting profession.
+                    </p>
+                
+            </div>
+        </div>
+
+        <div class="manifesto-point">
+            <div class="manifesto-letter">L</div>
+            <div class="manifesto-content">
+                <h3>Leading Member-centric Institute</h3>
+                <p>Prof. Elizabeth Kalunda also focuses on strengthening member value through 
+                    1. Innovative technologies to lift satisfaction and engagement, 2. Member Benefit Programs, 
+                    3. Leveraging the CPA brand for greater influence, and 4. Community outreach and 
+                    pro bono services to extend professional impact.</p>
+            </div>
+        </div>
+
+        <div class="manifesto-point">
+            <div class="manifesto-letter">E</div>
+            <div class="manifesto-content">
+                <h3>Empowerment of Upcoming Accountants & Inclusivity</h3>
+                <p>Prof. Kalunda is equally passionate about advancing professional growth through 
+                    1. Mentorship and career development, 2. Value-driven networking opportunities, 
+                    3. A strong youth empowerment agenda, and 4. Championing inclusivity for accountants 
+                    with disabilities, ensuring no one is left behind.</p>
+            </div>
+        </div>
+
+        <div class="manifesto-point">
+            <div class="manifesto-letter">E</div>
+            <div class="manifesto-content">
+                <h3>Empowered Profession for Enhanced Public Interest</h3>
+                <p>Prof. Kalunda remains committed to advancing the profession by 
+                    1. Elevating public awareness, 2. Strengthening stakeholder relationships, 
+                    3. Promoting respect, protection, and fair remuneration underpinned by ethics and 
+                    compliance, and 4. Enhancing brand visibility while empowering devolution through 
+                    ICPAK branches.</p>
+            </div>
+        </div>
+
+        <div class="manifesto-point">
+            <div class="manifesto-letter">K</div>
+            <div class="manifesto-content">
+                <h3>Knowledge Generation & Innovation</h3>
+                <p>Prof. Kalunda continues to shape the future of the accounting profession through 
+                    1. Knowledge and market-driven research initiatives, 2. Expanding access to knowledge 
+                    and insights, 3. Driving innovation with AI-enhanced technologies, and 4. Strengthening 
+                    collaborations in research and thought leadership.</p>
+            </div>
+        </div>
+
+        <div class="manifesto-point">
+            <div class="manifesto-letter">2.0</div>
+            <div class="manifesto-content">
+                <h3>Amplified Voice of ICPAK</h3>
+                <p>Prof. Kalunda’s leadership is grounded in 1. Unwavering integrity, 
+                    2. Strong protection of member interests, 3. Bold, transparent dialogue, and 
+                    4. Amplifying the voices of professionals across the accounting landscape.</p>
+            </div>
+        </div>
+    </div>
+
+
+
+    <!-- Add this inside the manifesto section, after the manifesto-card -->
+<div class="manifesto-download">
+    <a href="./pdfs/Manifesto.pdf" class="download-btn" download>
+        <i class="fas fa-download"></i>
+        Download My Manifesto
+    </a>
+</div>
+</section>
+
+<section class="campaign-updates">
+    <div class="campaign-header">
+        <h2>Campaign & Updates</h2>
+        <h3>Professional Development Initiative</h3>
+    </div>
+    
+    <div class="campaign-content">
+        <div class="campaign-image">
+            <img src="./images/camp1.jpeg" alt="Campaign Image">
+        </div>
+        
+        <div class="campaign-text">
+            <h4>Empowering Future Accountants</h4>
+            <p>Prof. Kalunda's latest initiative focuses on bridging the gap between academic knowledge and practical skills in the accounting profession. Through a series of workshops, mentorship programs, and networking events, young accountants are equipped with the tools they need to excel in their careers.</p>
+            
+            <div class="campaign-details">
+                <div class="detail-item">
+                    <span class="detail-number">500+</span>
+                    <span class="detail-label">Participants</span>
+                </div>
+                <div class="detail-item">
+                    <span class="detail-number">12</span>
+                    <span class="detail-label">Workshops</span>
+                </div>
+                <div class="detail-item">
+                    <span class="detail-number">50+</span>
+                    <span class="detail-label">Mentors</span>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="voice-leadership">
+    <div class="quote-container">
+        <div class="quote-content">
+            <div class="quote-icon">
+                <i class="fas fa-quote-left"></i>
+            </div>
+            <blockquote>
+                "The future of accounting in Kenya is not just about numbers; it's about creating ethical, tech-savvy professionals who can navigate the complexities of our evolving financial landscape. As we embrace digital transformation, my mission is to ensure that our young accountants are not just prepared for the future, but are actively shaping it."
+            </blockquote>
+            <div class="quote-author">
+                <span class="author-name">Prof. Kalunda</span>
+                <span class="author-title">Accounting Visionary & Educator</span>
+            </div>
+        </div>
+    </div>
+
+</section>
+  <!-- Add this inside the manifesto section, after the manifesto-card -->
+  <div class="manifesto-download">
+    <a href="./pdfs/SLEEK ED 1.pdf" class="download-btn" download>
+        <i class="fas fa-download"></i>
+        Download My Sleek Magazine
+    </a>
+</div>
+
+  <!-- Add this inside the manifesto section, after the manifesto-card -->
+  <div class="manifesto-download">
+    <a href="./pdfs/Score card.pdf" class="download-btn" download>
+        <i class="fas fa-download"></i>
+        Download My Score card
+    </a>
+</div>
+<br>
+
+
+
+        <!-- Contact Section -->
+<section id="contact" class="contact">
+    <div class="contact-container">
+        <div class="contact-info">
+            <h2>Contact Us</h2>
+            <p class="contact-subtitle">Get in touch with Me today</p>
+            
+            <div class="contact-details">
+                <div class="contact-item">
+                    <i class="fas fa-phone"></i>
+                    <div>
+                        <h3>Phone</h3>
+                        <p>+254 712 318 707</p>
+                    </div>
+                </div>
+                
+                <div class="contact-item">
+                    <i class="fas fa-envelope"></i>
+                    <div>
+                        <h3>Email</h3>
+                        <p>info@cpaelizabethkalunda.com</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="cta-section">
+                <h3>Ready to Start a Conversation?</h3>
+                <p>We're here to help you with your needs. Reach out to us through any of our channels.</p>
+                <button class="cta-button">Schedule a Call</button>
+            </div>
+        </div>
+
+        <div class="whatsapp-chat">
+            <div class="chat-header">
+                <div class="chat-profile">
+                    <img src="./images/iconapp.png" alt="WhatsApp">
+                    <div>
+                        <h3>Chat with Us</h3>
+                        <p>Typically replies within minutes</p>
+                    </div>
+                </div>
+            </div>
+            
+
+            <div class="chat-messages" id="chatMessages">
+                
+                <div class="message received">Hello! Thanks for contacting Prof Kalunda. How can I help you?</div>
+                <!-- Messages will be added here dynamically -->
+            </div>
+
+            <div class="chat-input">
+                <input type="text" id="messageInput" placeholder="Type your message...">
+                <!-- index.html -->
+<a 
+id="sendMessage"
+href="https://api.whatsapp.com/send?phone=254712318707&text=Hello" 
+target="_blank"
+>
+<i class="fab fa-whatsapp"></i>
+</a>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Footer Section -->
+<footer class="footer">
+    <div class="footer-content">
+        <!-- Company Info -->
+        <div class="footer-section company-info">
+            <h3>CPA PROF ELIZABETH KALUNDA</h3>
+            <p>Transforming ideas into reality through innovation and excellence.</p>
+            <div class="social-links">
+                <a href="https://www.facebook.com/liz.muvui/" 
+           target="_blank" 
+           rel="noopener noreferrer" 
+           aria-label="Facebook">
+          <i class="fab fa-facebook-f"></i>
+        </a>
+
+                <a href="https://x.com/lizmuvui" 
+           target="_blank" 
+           rel="noopener noreferrer"
+           aria-label="Twitter">
+          <i class="fab fa-twitter"></i>
+        </a>
+
+                <a href="https://www.linkedin.com/in/prof-cpa-elizabeth-kalunda-m-1b722235/?original_referer=https%3A%2F%2Fwww%2Egoogle%2Ecom%2F&originalSubdomain=ke" 
+           target="_blank" 
+           rel="noopener noreferrer"
+           aria-label="LinkedIn">
+          <i class="fab fa-linkedin-in"></i>
+        </a>
+
+
+          <a href="https://www.instagram.com/lizmuvui/" 
+          target="_blank" 
+          rel="noopener noreferrer"
+          aria-label="Instagram">
+         <i class="fab fa-instagram"></i>
+        </a>
+                
+            </div>
+        </div>
+
+        <!-- Quick Links -->
+        <div class="footer-section quick-links">
+            <h3>Quick Links</h3>
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">About </a></li>
+                <li><a href="#">Mission & Vision</a></li>
+                <li><a href="#">My Manifesto</a></li>
+                <li><a href="#">Contact</a></li>
+            </ul>
+        </div>
+
+        <!-- Services -->
+        <div class="footer-section services">
+            <h3>Sleek Agenda</h3>
+            <ul>
+                <li><a href="#">Setting the Bar in Standards for Superior Service</a></li>
+                <li><a href="#">Leading Member-centric Institute</a></li>
+                <li><a href="#">Empowerment of Upcoming Accountants & Inclusivity</a></li>
+                <li><a href="#">Empowered Profession for Enhanced Public Interest</a></li>
+                <li><a href="#">Knowledge Generation & Innovation</a></li>
+            </ul>
+        </div>
+
+        <!-- Contact Info -->
+        <div class="footer-section contact-info">
+            <h3>Contact Us</h3>
+            <ul>
+                
+                <li><i class="fas fa-phone"></i>+254 712 318 707</li>
+                <li><i class="fas fa-envelope"></i> info@cpaelizabethkalunda.com</li>
+                <li><i class="fas fa-clock"></i> Mon-Fri: 9:00 AM - 6:00 PM</li>
+            </ul>
+        </div>
+
+        <!-- Newsletter -->
+        <div class="footer-section newsletter">
+            <h3>Newsletter</h3>
+            <p>Subscribe to our newsletter for updates and news.</p>
+            <form class="newsletter-form">
+                <input type="email" placeholder="info@cpaelizabethkalunda.com" required>
+                <button type="submit">Subscribe</button>
+            </form>
+        </div>
+    </div>
+
+    <!-- Bottom Footer -->
+    <div class="footer-bottom">
+        <div class="footer-bottom-content">
+            <p>&copy; 2025 CPA PROF ELIZABETH KALUNDA . All rights reserved.</p>
+            <div class="footer-links">
+                <a href="#">Privacy Policy</a>
+                <a href="#">Terms of Service</a>
+            
+            </div>
+        </div>
+    </div>
+</footer>
+</main>
+
+<!-- Scroll Up Button -->
+<a href="#" id="scrollUp" class="scroll-up" aria-label="Scroll to top">
+    <i class="fas fa-chevron-up"></i>
+  </a>
+
+    <script src="js/main.js"></script>
+    
+</body>
+</html>
